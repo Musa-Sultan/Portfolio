@@ -22,7 +22,7 @@ To view the website, simply open the `index.html` file in any web browser.
 
 ## Author
 
-- **Musa Sultan**: [GitHub](https://github.com/your-musasultan)
+- **Musa Sultan**: [GitHub](https://github.com/Musa-Sultan)
 
 
 Feel free to reach out to me through any of the above channels for collaborations or inquiries.
