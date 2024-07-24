@@ -29,6 +29,6 @@ Feel free to reach out to me through any of the above channels for collaboration
 
 ---
 
-This `README.md` file provides a concise overview of your portfolio website, what technologies were used, and how to contact you. Make sure to replace placeholders like 
+This `README.md` file provides a concise overview of my portfolio website, what technologies were used, and how to contact. Make sure to replace placeholders like 
 `Your Name`, `example@gmail.com`, and social media links (`#`) with your actual information.
 
