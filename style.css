@@ -1,0 +1,423 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* menu start */
+.menu{
+    /* background-color: #222; */
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+.menu img{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+.menu a{
+    margin: 15px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.menu a:hover{
+    background-color: #ddd;
+    color: black;
+    text-decoration: underline;
+    transform: scale(1.2);
+    
+}
+
+/* Menu end */
+
+/* home section */
+#home{
+    position: relative;
+    background-image: url("image/bg.jpeg");
+    background-size: cover;
+    width: auto;
+    height: 700px;
+    background-position: center;
+}
+.content{
+    margin-left: 530px;
+    width: 500px;
+    height: 500px;
+    color: #ddd;
+    font-size: large;
+    padding-top: 130px;
+    padding-left: 10px;
+    /* animation: slideInFromBottom 3s ease forwards; */
+}
+
+.content h1{
+    color: #ddd;
+    font-size: 40px;
+    animation: slideInFromBottom 2s ease forwards;
+}
+
+.content h1 span{
+    font-size: 50px;
+    /* color: blueviolet; */
+    background-image: linear-gradient(to right, yellow, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: slideInFromBottom 3s ease forwards;
+}
+
+.content h2{
+    font-size: 30px;
+    color: aqua;
+    animation: slideInFromBottom 4s ease forwards;
+}
+
+.content a{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: green;
+    color: black;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid black;
+    line-height: 2.0;               /*space b/w line */
+    animation: slideInFromBottom 4s ease forwards;
+   
+}
+
+.content a:hover{
+    background-color: rgb(247, 179, 8);
+    text-decoration: underline;
+    color: #222;
+}
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+/* end of home section */
+
+/* About section */
+
+#about{
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    height: 700px;
+    background-color: #222;
+}
+
+.image{
+    width: 600px;
+    height: 600px;
+    margin-top: 60px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner{
+    width: 500px;
+    height: 500px;
+    background-image: url('image.jpeg');
+    background-size: cover;
+    border: 2px solid white;
+    border-radius: 500px;
+}
+.information{
+    width: 600px;
+    height: 600px;
+    margin-top: 60px;
+    background-color: #fff;
+    border: 2px solid whitesmoke;
+    border-radius: 14px;
+    line-height: 1.5;
+}
+.information h1{
+    font-size: 40px;
+    color: #222;
+    text-align: center;
+    text-decoration: underline;
+    font-style: oblique;
+}
+.information p{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 10px;
+}
+.information p span{
+    font-style: oblique;
+
+}
+.information h2{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-style: oblique;
+    background-color: #333;
+    margin-left: 200px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+}    
+.information h3{
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 10px;
+}
+.information h4{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 10px;
+}
+/* end of about */
+/* Skill */
+
+#skills{
+    height: 600px;
+    background-color: #222;
+    line-height: 3.0;
+}
+#skills h2{
+    font-size: 2.5rem;
+    color: #ddd;
+    background-color: #222;
+    text-align: center;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .skill {
+    width: calc(50% - 10px); /* Two skills per row with gap */
+    margin-bottom: 20px;
+  }
+  .skill-label {
+    font-size: 30px;
+    display: inline-block;
+    width: 80px;
+    color: wheat;
+  }
+  .skill-bar {
+    height: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+    position: relative;
+  }
+  .skill-bar-inner {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    width: 70%; /* Change width to adjust skill level */
+  }
+  .skill-name {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    line-height: 20px;
+  }
+
+/* end of skill */
+
+/* Services section */
+#services {
+    background-color: #222; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 80px 0; /* Padding top and bottom */
+    text-align: center; /* Center text */
+    
+}
+
+
+
+#services h2 {
+    font-size: 2.5rem; /* Adjust size as needed */
+    margin-bottom: 40px; /* Space below heading */
+}
+
+.services-list {
+    display: grid; /* Use CSS grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 30px; /* Gap between grid items */
+    justify-items: center; /* Center items horizontally */
+}
+
+
+
+.service {
+    background-color: #333; /* Darker background for items */
+    padding: 30px; /* Padding inside each service */
+    border-radius: 8px; /* Rounded corners */
+    text-align: left; /* Left-align text */
+    transition: all 1s ease;
+}
+.service:hover{
+  transform: scaleY(1.2);
+}
+.service h3 {
+    font-size: 1.8rem; /* Adjust size as needed */
+    margin-bottom: 15px; /* Space below heading */
+    background-image: linear-gradient(to right, rgb(0, 128, 53),rgb(0, 153, 255), rgb(214, 214, 19));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.service p {
+    font-size: 1.1rem; /* Adjust size as needed */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+/* end of service */
+
+/* Contact section */
+.contact {
+    /* background-color: #222;  */
+    background-image: url('image/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff; /* Light text color */
+    padding: 80px 0; /* Padding top and bottom */
+    text-align: center; /* Center text */
+}
+
+.contact h2 {
+    font-size: 2.5rem; /* Adjust size as needed */
+    margin-bottom: 40px; /* Space below heading */
+    background-image: linear-gradient(to right, rgb(0, 102, 255), rgb(39, 133, 67), rgb(0, 255, 64));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.contact-form {
+    max-width: 600px; /* Limit width of form */
+    margin: 0 auto; /* Center horizontally */
+    text-align: left; /* Left-align form elements */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 8px; /* Space below labels */
+    font-size: 1.2rem; /* Adjust size as needed */
+}
+
+input, textarea {
+    width: 100%; /* Full width for inputs and textarea */
+    padding: 10px; /* Padding inside inputs and textarea */
+    font-size: 1rem; /* Adjust size as needed */
+    border: none; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    border-bottom: 3px solid white;
+    background-color: #333;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+.btn {
+    display: inline-block; /* Display as block element */
+    padding: 12px 30px; /* Padding inside button */
+    background-color: blueviolet; /* Button background color */
+    color: wheat; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 15px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    margin-left: 200px;
+}
+
+.btn:hover {
+    background-color: blue; /* Darker background color on hover */
+    transform: scale(1.2);
+}
+
+/* end of contact */
+
+/* footer  */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    border-radius: 15px;
+  }
+  .menu1 {
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .menu1 a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+  }
+  .menu1 a:hover{
+    text-decoration: underline;
+    color: yellowgreen;
+  }
+  .contact-info {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 2.0;
+  }
+  .contact-info p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  .get-in-touch {
+    text-align: left;
+    margin-top: 10px;
+    color: green;
+    font-size: 25px;
+  }
+  .social-icons {
+    margin-top: 10px;
+  }
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px; 
+    line-height: 2.0;
+    width: 20px;
+    height: 20px;
+  }
+  .social-icons a img{
+    width: 50px;
+    height: 40px;
+    background-color: white;
+    border-radius: 14px;
+  }
+  .social-icons a img:hover{
+    width: 50px;
+    height: 50px;
+  }
+/* end of footer */
